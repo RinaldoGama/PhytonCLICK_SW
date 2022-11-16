@@ -1,0 +1,48 @@
+conf t
+!
+username cisco privilege 15 password 0 cisco
+!
+interface Vlan1
+ ip address 198.18.0.99 255.255.255.0
+ no shut
+!
+line vty 0 4
+ logging synchronous
+ login local
+ transport input telnet ssh
+!
+end
+wr
+
+
+conf t
+!
+username cisco privilege 15 password 0 cisco
+!
+interface Vlan1
+ ip address 198.18.0.98 255.255.255.0
+ no shut
+!
+line vty 0 4
+ logging synchronous
+ login local
+ transport input telnet ssh
+!
+end
+wr
+
+conf t
+!
+username cisco privilege 15 password 0 cisco
+!
+interface Vlan1
+ ip address 198.18.0.97 255.255.255.0
+ no shut
+!
+line vty 0 4
+ logging synchronous
+ login local
+ transport input telnet ssh
+!
+end
+wr
